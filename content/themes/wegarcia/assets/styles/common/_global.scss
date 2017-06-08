@@ -1,0 +1,111 @@
+body, html {
+    font-family: $font-sans-serif;
+    background-color: $brand-secondary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-serif;
+}
+
+.container {
+    @include container-fixed;
+
+    @media (min-width: $screen-lg-min) {
+        width: $container-md;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.site-content {
+    -webkit-transition: -webkit-transform .28s, opacity .28s;
+    -ms-transition: -o-transform .28s, opacity .28s;
+    -o-transition: -o-transform .28s, opacity .28s;
+    transition: transform .28s, opacity .28s;
+}
+
+.slide-out .site-content {
+    -webkit-transform: translate3d(0, 50px, 0);
+    -ms-transform: translate3d(0, 50px, 0);
+    -o-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+}
+
+@mixin center($horizontal: true, $vertical: true) {
+    position: absolute;
+
+    @if $horizontal and $vertical {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @else if $horizontal {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    @else if $vertical {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
+.banner {
+    min-height: $top-nav-height;
+    background-color: #ffffff;
+
+    .brand {
+        @extend .h3;
+
+        font-weight: bolder;
+        padding: 0 3px;
+        margin: 0;
+        position: absolute;
+        font-family: $font-serif;
+        background-color: $brand-secondary;
+    }
+}
+
+.hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 50vh;
+
+    @media (min-width: $screen-sm-min) {
+        height: calc(70vh);
+        min-height: 500px;
+        max-height: 800px;
+    }
+
+    .vertical {
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+
+        @include center(false, true);
+    }
+
+    a {
+        background-color: darken($brand-secondary, 20%);
+    }
+}
+
+article {
+    a {
+        text-decoration: none;
+        border-bottom: 0 solid $brand-primary;
+        box-shadow: inset 0 -5px 0 $brand-primary;
+        color: inherit;
+        -webkit-transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+        transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+
+        &:hover, & :focus {
+            text-decoration: none;
+            background: $brand-primary;
+            color: $brand-secondary;
+        }
+    }
+}

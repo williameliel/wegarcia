@@ -1,0 +1,16 @@
+{
+	"wpVer": "4.5.3",
+	"url": "http://localhost",
+	"tablePrefix": "we",
+	"dbHost": "localhost",
+	"dbName": "wedb",
+	"dbUser": "root",
+	"dbPass": "root",
+	"git": false,
+	"submodule": false,
+	"customDirs": true,
+	"wpDir": "wp",
+	"contentDir": "content",
+	"installTheme": false,
+	"saltKeys": "define('AUTH_KEY',         '[Lt^`ozqLR#mpP0iQkc6mw,{|] +ol!4k/*}jSeK4^9@ecAyc3y3#O=dr%^ETqCU');\ndefine('SECURE_AUTH_KEY',  'luVr-1L.g~Y^ZTf;|-3KL:Xf=+{I[|*t|%P)&@V}muY[(!kw:Sls61)j7>ejIWc_');\ndefine('LOGGED_IN_KEY',    '*+R7+H[Rh^|+pU>5yoGP=o xHL/6;SZg%toh[lg=H?Z:Uq~BQ[X9e|!hi@$rsA@-');\ndefine('NONCE_KEY',        '7F!1qs=JBYLt%O)TKMc3?}WJa!x2C(6IDDW/E3$*fmCB5kE-.3$;T($IF0ikhg&-');\ndefine('AUTH_SALT',        'Waq4+!^n%2*76O-+MHDJ{_2,<rQ9sRZK#+-Q1}C@.i3]G>U2Ftw2J+sE{K0TZ7<C');\ndefine('SECURE_AUTH_SALT', '%G.cy651K-ZAx1NST`~jA7E&W8_;W<kue{l+AX7(Q4emIH2tLk&#C@1Q--ARBS@d');\ndefine('LOGGED_IN_SALT',   '|{;G42or:z+`5aM*rybHD?W-12H!QPcG((G^tOPRT/d-Ot>}nw/JU.q|KE><r07W');\ndefine('NONCE_SALT',       '@|+e^b|xAKQ(jDI@JjJFWX&[@qq3Q]bD++IX)`<!q5+jwU>*LEFpCA2x2w}#fXRU');\n"
+}

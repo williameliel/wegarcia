@@ -1,0 +1,28 @@
+// Glyphicons font path
+$icon-font-path: "../fonts/";
+
+// Grid settings
+$main-sm-columns: 12;
+$sidebar-sm-columns: 4;
+
+// Colors
+$brand-primary: #0f1626;
+$brand-secondary: #F5F5f5;
+
+$font-serif: "Playfair Display", serif;
+$font-sans-serif: "Open Sans", sans-serif;
+
+$font-size-base: 14px !default;
+
+$factor: 2;
+
+$font-size-large: ceil($font-size-base * 1.25 * $factor) !default;
+$font-size-small: ceil($font-size-base * 0.85 * $factor) !default;
+$font-size-h1: floor($font-size-base * 2.6) * $factor !default;
+$font-size-h2: floor($font-size-base * 2.15 * $factor) !default;
+$font-size-h3: ceil($font-size-base * 1.7) * $factor !default;
+$font-size-h4: ceil($font-size-base * 1.25 * $factor) !default;
+$font-size-h5: $font-size-base !default;
+$font-size-h6: ceil($font-size-base * 0.85 * $factor) !default;
+
+$top-nav-height: 20px;

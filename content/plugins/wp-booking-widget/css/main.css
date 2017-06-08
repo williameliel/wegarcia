@@ -1,0 +1,8 @@
+@import url('base.css');
+
+.hasDatepicker{
+  position: absolute;
+}
+.date-range-selected{
+  background-color: red;
+}

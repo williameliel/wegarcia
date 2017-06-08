@@ -1,0 +1,109 @@
+%form {
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: $dawn;
+    }
+
+    .select2-selection.select2-selection--single,
+    input,
+    textarea {
+        background-color: transparent;
+        border: none;
+        color: $dawn;
+        font-size: 1.85rem;
+        padding: 0.5rem 0.15rem;
+        text-align: left;
+        width: 100%;
+    }
+
+    textarea {
+        border: solid 2px $dawn;
+        padding: 0.5rem;
+    }
+
+    button:not([class^="picker"]) {
+        @include btn($shark, $white);
+    }
+
+    ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: $dawn;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $dawn;
+    }
+
+    :-ms-input-placeholder {
+        /* IE 10+ */
+        color: $dawn;
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: $dawn;
+    }
+}
+
+%form-row {
+    > div {
+        border-bottom: solid 2px $dawn;
+        margin: 2.7rem 0;
+        position: relative;
+
+        &.no-border {
+            border: none;
+        }
+
+        @media (min-width: $screen-sm-min) {
+            margin: 1.85rem 0;
+        }
+    }
+
+    label.error {
+        color: $tall-poppy;
+        font-size: 1.2rem;
+        font-weight: bold;
+        left: 0;
+        letter-spacing: 0.05rem;
+        position: absolute;
+        text-transform: uppercase;
+        top: -1.5rem;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        display: flex;
+        justify-content: space-between;
+
+        /* one item */
+        div:not([class^="picker"]):nth-child(1):nth-last-child(1) {
+            width: 100%;
+        }
+
+        /* two items */
+        div:not([class^="picker"]):nth-child(1):nth-last-child(2),
+        div:not([class^="picker"]):nth-child(2):nth-last-child(1) {
+            width: calc(50% - 1rem);
+        }
+
+        /* three items */
+        div:not([class^="picker"]):nth-child(1):nth-last-child(3),
+        div:not([class^="picker"]):nth-child(2):nth-last-child(2),
+        div:not([class^="picker"]):nth-child(3):nth-last-child(1) {
+            width: calc(33.3% - 1rem);
+        }
+    }
+}
+
+%form-message {
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding-top: 3rem;
+    text-transform: uppercase;
+}
+
+%form-message--error {
+    @extend %form-message;
+
+    color: $tall-poppy;
+}

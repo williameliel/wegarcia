@@ -1,0 +1,122 @@
+.hero {
+    position: relative;
+    background-color: $white;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    video::-webkit-media-controls-start-playback-button {
+        display: none !important;
+    }
+
+    .content_box{
+        position: absolute;
+        z-index: 1;
+        margin: 0 auto;
+        float: none;
+        left: 0;
+        right: 0;
+        bottom: -50px;
+    }
+
+    .slick-prev:before, .slick-next:before{
+        font-size: 12em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        min-height: 100px;
+    }
+}
+
+.hero__logo {
+    display: none;
+    left: 0;
+    margin: 0 auto;
+    max-width: 500px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        display: block;
+    }
+}
+
+.hero__slider {
+    //max-height: 80rem;
+    overflow: hidden;
+    height: 300px;
+    opacity: 0;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &.loaded {
+        opacity: 1;
+        min-height: auto;
+    }
+
+    min-height: 430px;
+
+    @media (min-width: $screen-md-min) {
+        height: $hero-min-height;
+    }
+
+    @include transition(opacity 0.33s ease-in);
+
+    video {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        background-size: cover;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    &.slick-slider {
+        margin: 0;
+    }
+
+    .slick-slide,
+    > div {
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .slick-track {
+        height: 100%;
+    }
+}
+
+.hero__slider-nav {
+    @extend %slider-nav;
+}
+
+.hero__slider-nav__next,
+.hero__slider-nav__prev {
+    @extend %slider-nav__nextprev;
+}
+
+.hero__slider-nav__prev {
+    @extend %slider-nav__prev;
+}
+
+.hero__slider-nav__next {
+    @extend %slider-nav__next;
+}

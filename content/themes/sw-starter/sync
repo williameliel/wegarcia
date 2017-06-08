@@ -1,0 +1,1 @@
+rsync -rave "ssh -i /Users/Williamgarcia/.ssh/WEgarcia.pem" /Users/Williamgarcia/websites/wegarcia/content/themes/sw-starter ubuntu@52.34.244.100:/var/www/vhosts/wegarcia/content/themes --exclude="node_modules" --exclude="sync" --exclude="git"

@@ -1,0 +1,18 @@
+// NOTE: some parent element of the artifact must have position relative.
+
+%artifact {
+    opacity: 0;
+    transition: opacity .7s ease-in;
+    display: none;
+
+    &.artifact--is-visible {
+        opacity: 1;
+    }
+
+    @media (min-width: $screen-md-min) {
+        display: block;
+        max-width: 30rem;
+        max-height: 30rem;
+        position: absolute;
+    }
+}

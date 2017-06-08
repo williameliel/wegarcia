@@ -1,0 +1,1 @@
+export const WP_URL = 'http://wegarcia.dev/wp-json/wp/v2';

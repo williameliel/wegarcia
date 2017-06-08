@@ -1,0 +1,37 @@
+.instagram {
+    opacity: 0;
+
+    @include transition(0.5s opacity ease-in);
+
+    &.loaded {
+        opacity: 1;
+    }
+
+    .instagram__item {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 50%;
+
+        a {
+            background-color: black;
+            display: block;
+            width: 100%;
+        }
+
+        img {
+            height: auto;
+            transition: all 0.15s ease-in;
+            width: 100%;
+        }
+
+        &.instagram__item--full-width {
+            width: 100%;
+        }
+
+        @media (min-width: $screen-sm-min) {
+            width: 16.666667%;
+        }
+    }
+}

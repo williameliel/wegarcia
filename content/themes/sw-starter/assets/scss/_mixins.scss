@@ -1,0 +1,106 @@
+@mixin border-top(){
+    border-top: 1px dashed $genoa;
+}
+@mixin border-bottom(){
+    border-bottom: 1px dashed $genoa;
+}
+@mixin background-hover(){
+
+    $mainbg : $merino;
+    $fontcolor: $outer-space;
+    color: $fontcolor;
+    text-decoration: none;
+    
+    border-bottom: 2px solid $mainbg;
+    
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top,  $mainbg 50%, transparent 50%);
+    @include transition( background-position 0.1s ease, border-bottom-color 0.1s ease );
+
+    &:hover, &:focus{
+        text-decoration: none;
+        color: $fontcolor;
+        background-position: 0 100%;
+        border-bottom: 2px solid darken($mainbg, 20%);
+        text-shadow: 1px 2px darken($mainbg, 20%);
+    }
+    
+}
+@mixin btn($background: $merino, $color: $shark) {
+    background-color: $background;
+    border: none;
+    color: $color;
+    display: inline-block;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin: 1rem auto;
+    padding: 1.8rem 3rem;
+    transition: all 0.15s ease-in;
+
+    &:hover,
+    &:focus {
+        background-color: $color;
+        color: $background;
+        text-decoration: none;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        padding: 1.8rem 8rem;
+    }
+}
+
+@mixin titleBasic {
+    color: $tall-poppy;
+    font-family: $secondary-font;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 8rem;
+        letter-spacing: -0.2rem;
+        line-height: 0.9;
+    }
+}
+
+@mixin titleShadow {
+    font-family: $secondary-font;
+    font-size: 4em;
+    line-height: 1;
+    text-shadow: 6px 6px 0 $merino;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 8em;
+    }
+}
+
+@mixin titleShadowAndBorder {
+    color: $merino;
+    font-family: $secondary-font;
+    font-size: 7.25em;
+    line-height: 1;
+    text-shadow: 0 0 2px black, -6px 3px 0 black;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-sm-min) {
+        text-shadow: 0 0 1px black, -6px 3px 0 black;
+        font-size: 10em;
+    }
+}
+
+@mixin subtitleBasic {
+    font-family: $primary-font;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 2.5rem;
+        letter-spacing: 0.4rem;
+    }
+}

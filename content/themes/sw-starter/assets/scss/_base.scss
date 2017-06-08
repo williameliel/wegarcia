@@ -1,0 +1,107 @@
+/*
+ * This is the _base.scss file. If you target anything other than a
+ * native html element. You are doing it wrong. (Hart - May, 2016)
+ */
+body {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $secondary-font;
+    letter-spacing: 0.1rem;
+}
+
+p {
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.6;
+}
+body, html{
+    height: 100%;
+}
+body {
+    font-family: $primary-font, sans-serif;
+
+    :focus {
+        outline: none;
+    }
+}
+article{
+    a{
+        //@include background-hover();
+        color:$genoa;
+    }
+    ul{
+        padding-left: 0;
+        li{
+            font-size: $font-size-large;
+            list-style: none;
+            text-indent: -1em;
+            padding-left: 1em;
+            &:before{
+                content: "~";
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+pre{
+    background-color: $shark;
+    color: white;
+    font-family: "Courier New", monospace;
+    overflow: auto;
+    padding: 10px 12px;
+}
+
+#main {
+    background-color: $white;
+    color: $shark;
+    overflow: hidden;
+
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    @media (min-width: $screen-sm-min) {
+        border-bottom: none;
+    }
+    // &.main-container{
+    //     padding-top: $navbar-height;
+    // }
+}
+
+.container{
+    max-width: $container-tablet;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+#container {
+    @include transition(opacity 0.2s ease-in);
+
+    section {
+        opacity: 1;
+    }
+}
+
+#container.slide-out {
+    opacity: 0.5;
+
+    section:not(.global_nav_top) {
+        opacity: 0;
+    }
+}
+
+.single-projects{
+    time{
+        display: none;
+    }
+}
+.entry-summary, .entry-content{
+    padding: 15px 0;
+}
+

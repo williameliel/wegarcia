@@ -1,0 +1,27 @@
+.footer {
+    margin: 40px 0 0 0;
+    
+    a{
+        color: $shark;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+    .footer-wrap{
+      @include border-top();
+    }
+    .menu-footer-menu{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li{
+        display: inline-block;
+        margin: 5px 2px;
+        font-size: 25px;
+        a{
+         &:hover{
+          color: $genoa;
+         } 
+        }
+      }
+    }
+}

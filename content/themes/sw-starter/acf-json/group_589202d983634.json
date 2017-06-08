@@ -1,0 +1,364 @@
+{
+    "key": "group_589202d983634",
+    "title": "Company Info",
+    "fields": [
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_58920389f717c",
+            "label": "General",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "new_lines": "wpautop",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": "",
+            "key": "field_589202e0f7178",
+            "label": "Address",
+            "name": "company_address",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5892030ef7179",
+            "label": "Phone Number",
+            "name": "company_phone_number",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_5892031ff717a",
+            "label": "Header Logo",
+            "name": "header_logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_5892035df717b",
+            "label": "Footer Logo",
+            "name": "footer_logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_5892087e6689d",
+            "label": "Background Image",
+            "name": "background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_589203bcf717d",
+            "label": "Social",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "placeholder": "",
+            "key": "field_589203c4f717e",
+            "label": "Facebook",
+            "name": "company_facebook",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "placeholder": "",
+            "key": "field_589203d2f717f",
+            "label": "Twitter",
+            "name": "company_twitter",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "placeholder": "",
+            "key": "field_589203e1f7180",
+            "label": "Instagram",
+            "name": "company_instagram",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "placeholder": "",
+            "key": "field_589203fcf7181",
+            "label": "Pinterest",
+            "name": "company_pinterest",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "placeholder": "",
+            "key": "field_58920445f7182",
+            "label": "Youtube",
+            "name": "company_youtube",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "placeholder": "",
+            "key": "field_58920466f7183",
+            "label": "Tripadvisor",
+            "name": "company_tripadvisor",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_5892048267233",
+            "label": "Languages",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "af": "Afrikaans",
+                "sq": "Albanian",
+                "ar": "Arabic",
+                "az": "Azerbaijani",
+                "eu": "Basque",
+                "bn": "Bengali",
+                "be": "Belarusian",
+                "bg": "Bulgarian",
+                "ca": "Catalan",
+                "zh-CN": "Chinese Simplified",
+                "zh-TW": "Chinese Traditional",
+                "hr": "Croatian",
+                "cs": "Czech",
+                "da": "Danish",
+                "nl": "Dutch",
+                "en": "English",
+                "eo": "Esperanto",
+                "et": "Estonian",
+                "tl": "Filipino",
+                "fi": "Finnish",
+                "fr": "French",
+                "gl": "Galician",
+                "ka": "Georgian",
+                "de": "German",
+                "el": "Greek",
+                "gu": "Gujarati",
+                "ht": "Creole Haitian",
+                "iw": "Hebrew",
+                "hi": "Hindi",
+                "hu": "Hungarian",
+                "is": "Icelandic",
+                "id": "Indonesian",
+                "ga": "Irish",
+                "it": "Italian",
+                "ja": "Japanese",
+                "kn": "Kannada",
+                "ko": "Korean",
+                "la": "Latin",
+                "lv": "Latvian",
+                "lt": "Lithuanian",
+                "mk": "Macedonian",
+                "ms": "Malay",
+                "mt": "Maltese",
+                "no": "Norwegian",
+                "fa": "Persian",
+                "pl": "Polish",
+                "pt": "Portuguese",
+                "ro": "Romanian",
+                "ru": "Russian",
+                "sr": "Serbian",
+                "sk": "Slovak",
+                "sl": "Slovenian",
+                "es": "Spanish",
+                "sw": "Swahili",
+                "sv": "Swedish",
+                "ta": "Tamil",
+                "te": "Telugu",
+                "th": "Thai",
+                "tr": "Turkish",
+                "uk": "Ukrainian",
+                "ur": "Urdu",
+                "vi": "Vietnamese",
+                "cy": "Welsh",
+                "yi": "Yiddish"
+            },
+            "default_value": [],
+            "allow_custom": 0,
+            "save_custom": 0,
+            "toggle": 0,
+            "return_format": "array",
+            "key": "field_5892049367234",
+            "label": "Translator Languages",
+            "name": "translator_languages",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "meta"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1485965523
+}

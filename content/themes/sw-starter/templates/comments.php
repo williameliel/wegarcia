@@ -1,0 +1,1 @@
+<?php /* To avoid WP error */ ?>
